@@ -45,7 +45,7 @@ for (col in columns_to_modify) {
 print(new_df)
 
 
-### Separate the samples as N1, N2, M1 and M2 ###
+### Separate the 80 samples into N1, N2, M1 and M2 ###
 # change the row's name
 new_df[2,1] = c("Identify")
 colnames(new_df) = new_df[2, ]
