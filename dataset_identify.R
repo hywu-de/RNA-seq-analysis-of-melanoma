@@ -1,4 +1,3 @@
-setwd("/Users/hsinyuwu/Desktop/")
 library("dplyr")
 library("tidyr")
 library("magrittr")
@@ -20,7 +19,7 @@ colnames(new_df) = new_df[1, ]
 colnames(new_df) = gsub("-", ".", colnames(new_df))
 
 
-# Replace variables in the specified row with N1, N2, M1, M2 from the specified columns
+# Replace geneid in the specified row with N1, N2, M1, M2 from the specified columns
 n1 = c("LE.063.SP.064_N", "LE.117.RB.118_N", "FKH.021.022_N", "LE.081.TR.082_N", "BO.001.SH.002_N",
             "LE.047.LF.048_N", "LE.061.TM.062_N", "LE.037.RG.038_N", "LE.019.WP.020_N", "LE.029.SE.030_N",
             "018_N", "LE.021.TH.022_N", "FKH.027.028_N")
@@ -62,7 +61,7 @@ df_groups = list(n1, n2, m1, m2)
 file_names = c("n1.txt", "n2.txt", "m1.txt", "m2.txt")
 
 # Specify the common directory (file path)
-directory = "/Users/hsinyuwu/Desktop/"
+directory = "/Path/to/your/directory/"
 
 # Use a for loop to write each data frame to its respective file (generate four text files: n1, n2, m1, m2 )
 for (i in 1:length(df_groups)) {
@@ -78,7 +77,7 @@ for (i in 1:length(df_groups)) {
 groups = list(n1, n2, m1, m2)
 
 # Specify the file path
-directory = "/Users/hsinyuwu/Desktop/"
+directory = "/path/to/your/directory/"
 
 # Loop through four groups
 for (group_idx in 1:length(groups)){
