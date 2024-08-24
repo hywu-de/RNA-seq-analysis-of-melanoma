@@ -42,8 +42,6 @@ columns_to_modify = setdiff(names(new_df), col_to_exclude)
 for (col in columns_to_modify) {
   new_df[2, col] = "Mel2"}
 
-print(new_df)
-
 
 ### Separate the 80 samples into N1, N2, M1 and M2 ###
 # change the row's name
